@@ -94,4 +94,26 @@ Note the steps which have been skipped below. You don't need to complete these s
 5.Now that you are set up and ready to develop Flutter apps, let us understand how to create a new app in Android Studio with a brief overview of the different tools in Android Studio.
 [https://www.youtube.com/watch?v=HG6vJDJVM3g](https://www.youtube.com/watch?v=HG6vJDJVM3g)
 
-6.
+6. 
+To build any application, we start with widgets – The building block of flutter applications. Widgets describe what their view should look like, given their current configuration and state. Remember, the first impression is the last. You'll always work with widgets if you're planning to start your app development journey with flutter. 
+
+[https://www.youtube.com/watch?v=bKueYVtV0eA](https://www.youtube.com/watch?v=bKueYVtV0eA)
+
+ **Material App**
+A Material app starts with the [MaterialApp](https://api.flutter.dev/flutter/material/MaterialApp-class.html) widget, which builds a number of useful widgets at the root of your app.
+watch the below video from 7min 45sec time:
+[https://youtu.be/TSIhiZ5jRB0?t=465](https://youtu.be/TSIhiZ5jRB0?t=465)
+## **Scaffold**
+[https://www.youtube.com/watch?v=fcakQFrJVFQ](https://www.youtube.com/watch?v=fcakQFrJVFQ)
+## **Stateless and Hot Reload**
+The state of an app can very simply be defined as anything that exists in the memory of the app while the app is running. The widgets whose state can not be altered once they are built are called stateless widgets.
+[https://www.youtube.com/watch?v=zwPBMg3SHVU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=7&ab_channel=TheNetNinja](https://www.youtube.com/watch?v=zwPBMg3SHVU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=7&ab_channel=TheNetNinja)
+## **AppBar and Text**
+[https://www.youtube.com/watch?v=3RqU5q_mIlQ](https://www.youtube.com/watch?v=3RqU5q_mIlQ)
+## **Container**
+[https://www.youtube.com/watch?v=X47zIAGIJNE&list=PLlvRDpXh1Se5LTJZDrUF9h1_1AT4Raxjd](https://www.youtube.com/watch?v=X47zIAGIJNE&list=PLlvRDpXh1Se5LTJZDrUF9h1_1AT4Raxjd)
+## **Padding**
+[https://www.youtube.com/watch?v=d9wQuxPZ494](https://www.youtube.com/watch?v=d9wQuxPZ494)
+## **Columns and Rows**
+[https://www.youtube.com/watch?v=1Iiq4oPCz3k&list=PLlvRDpXh1Se5LTJZDrUF9h1_1AT4Raxjd&index=4](https://www.youtube.com/watch?v=1Iiq4oPCz3k&list=PLlvRDpXh1Se5LTJZDrUF9h1_1AT4Raxjd&index=4)
+## **TextField**
