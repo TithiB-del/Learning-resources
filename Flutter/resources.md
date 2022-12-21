@@ -332,4 +332,142 @@ Since the services are cloud-hosted, developers can smoothly perform on-demand s
     
     This demonstrates the manual method of adding all the config files in android and iOS, which the firebase CLI automates. It is absolutely okay to skip this part, as it is done automatically if you have completed the flutterfire config for your app correctly.
     
-    
+    Authentication is a Firebase feature offering ready-to-use UI libraries, backends, and convenient SDKs for user application authentication. Authentication is supported through phone numbers, passwords, and providers such as Google, Twitter, Facebook, and others.
+
+[https://www.youtube.com/watch?v=8sGY55yxicA](https://www.youtube.com/watch?v=8sGY55yxicA)
+
+## Email and Password Authentication
+
+Before implementing, let's understand the code to authenticate users with their email and password.
+
+1. **Registering email and password**
+
+For using email and password to authenticate users, firstly, we must register the email address and the password on our firebase console.
+
+[https://lh6.googleusercontent.com/aCa8DUt2GhjtRNGfT2W7RHakiuoDDV9x2C7v4jeP8jwBSlTDHtxSSdKT16K4B4SSdiGSAMs4nWYiQcf9VHgWC2LBuRdATH57S1Yc0ROcnM_If4kYIPWFCjnjnkag4JclQM7OpeKQ15NMgzeX4x-j3c40a7ohQjmuiJu-4teLpqAY1qYMwRYbRc2JX7nsMw](https://lh6.googleusercontent.com/aCa8DUt2GhjtRNGfT2W7RHakiuoDDV9x2C7v4jeP8jwBSlTDHtxSSdKT16K4B4SSdiGSAMs4nWYiQcf9VHgWC2LBuRdATH57S1Yc0ROcnM_If4kYIPWFCjnjnkag4JclQM7OpeKQ15NMgzeX4x-j3c40a7ohQjmuiJu-4teLpqAY1qYMwRYbRc2JX7nsMw)
+
+Here, the variable credential calls a function to register the user with email and password set as per the provided variables (`emailAddress` and `password`). In the ideal case, this should register your user to your firebase console in the authentication tab, but it can have errors, so try-catch is used.
+
+`FirebaseAuthException` specifically caters to errors thrown specifically by  `FirebaseAuth`, i.e., errors from the firebase console like the account already exist etc. In contrast, the errors like no internet are managed by normal catch only. 
+
+In the above code snippet, error handling is done by just printing the error message on the terminal but in a more user-interactive way which could show a dialog box to the user about what the error could be showing e.code on the dialog box. You can use [AlertDialog (Flutter Widget of the Week)](https://www.youtube.com/watch?v=75CsnyRXf5I&ab_channel=Flutter) for the same.
+
+1. **Signing in with a registered email and password**
+
+[https://lh3.googleusercontent.com/I0Pkk4yHtCq30IIWG3A9Z6ywUdklOj0MktcOaEwWt8n_hBibQS5BOP6SP1uxT2Gr6iZR7b_GXJLczlRHZ-KjP88n-eFS5cFDrSjNIosRg79e7Xx0MHFGfzVGNPKBn4HvFLsW5TH14umWZ4Z2cj019a5SojNb-jSbZ8h5hTl8nhRVsxTHTh5FRuQ-vGvB7g](https://lh3.googleusercontent.com/I0Pkk4yHtCq30IIWG3A9Z6ywUdklOj0MktcOaEwWt8n_hBibQS5BOP6SP1uxT2Gr6iZR7b_GXJLczlRHZ-KjP88n-eFS5cFDrSjNIosRg79e7Xx0MHFGfzVGNPKBn4HvFLsW5TH14umWZ4Z2cj019a5SojNb-jSbZ8h5hTl8nhRVsxTHTh5FRuQ-vGvB7g)
+
+After registering, the user can get authenticated with their email and password, a similar method to registering the user. After the `signInWithEmailAndPassword` method, you can push your designed home screen. Make sure to put the code to push the home screen in the try block, as the screen should only be pushed when no error is encountered.
+
+1. **Logging Out**
+
+[https://lh6.googleusercontent.com/qLcQa5vrJiw0eaYDF2ezLyl5Exb5QVb-CxcJXztCZpYd8uWFI0zzC4jKaWHi5jQo-MqwAx90IZZv6PXWwN6hxAmjFMPBoDPRvILb8ELDftEVSqfFXFI0ajklchkAg4_HNcyRJo09on-cd0mNXkrqYGwGjo51M2R35NJvJd44BXxNvVvv_sF8C6HnmKUuhQ](https://lh6.googleusercontent.com/qLcQa5vrJiw0eaYDF2ezLyl5Exb5QVb-CxcJXztCZpYd8uWFI0zzC4jKaWHi5jQo-MqwAx90IZZv6PXWwN6hxAmjFMPBoDPRvILb8ELDftEVSqfFXFI0ajklchkAg4_HNcyRJo09on-cd0mNXkrqYGwGjo51M2R35NJvJd44BXxNvVvv_sF8C6HnmKUuhQ)
+
+The above code will log out the user from `FirsebaseAuth`
+
+You can implement the above functions in your app by following the below steps:
+
+1. Make a SignIn/SignUp UI to get the email address and password from the user and store them in a variable named so. The widgets that you can use are `TextField`, `ElevatedButton`, etc.
+2. Call the function to sign up the user or log in from the `ElevatedButton`, and once the user is logged in without an error, you can push the app's home screen.
+
+Use these steps to implement the functions:
+
+[Authenticate with Firebase using Password-Based Accounts on Flutter | Firebase Documentation](https://firebase.google.com/docs/auth/flutter/password-auth)
+
+You can execute the above-mentioned async function `onPressed` in `ElevatedButton`. Make sure to add the keyword async to the `onPressed` function.
+
+# Google Authentication
+
+[https://lh6.googleusercontent.com/43j5d2ZAjUQ7yp2f83PQOG6tKZbQmqoJXeGTFvAfz6khNzTqXrk-vBqWQvL22LKPVrwJV6Fe8DdANVF2upZ1fI9n9anmy8ps7uc7EqMCnia2kfpQ74l6y-r8TPTzOEWClosJjTvDt9g--Zs5cXaHtrfuiJypjd188AVJGhh2C5TkgCaV0ddW4G8qW_0Bxg](https://lh6.googleusercontent.com/43j5d2ZAjUQ7yp2f83PQOG6tKZbQmqoJXeGTFvAfz6khNzTqXrk-vBqWQvL22LKPVrwJV6Fe8DdANVF2upZ1fI9n9anmy8ps7uc7EqMCnia2kfpQ74l6y-r8TPTzOEWClosJjTvDt9g--Zs5cXaHtrfuiJypjd188AVJGhh2C5TkgCaV0ddW4G8qW_0Bxg)
+
+You guys must be familiar with such UI of google sign-in, but how to bring this method into your app?
+
+Follow the following steps in order to implement google auth into your app →
+
+1. Set up a Firebase project on the Firebase console and configure fluttterfire in your app directory.
+2. Enable Google as a sign-in method in the Firebase console:
+    1. In the [Firebase console](https://console.firebase.google.com/), open the Auth section.
+    2. On the Sign-in method tab, enable the Google sign-in method and click Save
+3. Install the `google_sign_in` package from flutter pub.dev by typing in the command `flutter pub add google_sign_in` in your project terminal
+4. Now understand the following code workflow and try to implement it on your app.
+
+[https://lh6.googleusercontent.com/c8xrHwyPnRbJlQJeBMkwiByvCPeA2J-zGkcGfKeOl80vtSS6B0ePeaqTdDUvwlYW-5VRT_joxWNtdgYIy4sw4sFm8lnnGwoZQRo3vHsGPAcZrN3ye6hdus4A12I4rBzkgjQsd940x8MUFGySNfeSAkWe7ezrer37hL6dDV6dBdTKfSJzur-GJPVdJqKAkQ](https://lh6.googleusercontent.com/c8xrHwyPnRbJlQJeBMkwiByvCPeA2J-zGkcGfKeOl80vtSS6B0ePeaqTdDUvwlYW-5VRT_joxWNtdgYIy4sw4sFm8lnnGwoZQRo3vHsGPAcZrN3ye6hdus4A12I4rBzkgjQsd940x8MUFGySNfeSAkWe7ezrer37hL6dDV6dBdTKfSJzur-GJPVdJqKAkQ)
+
+Above is the implementation of google sign-in but without any error handling. You just need to use an elevated button to call this function. This is made simple by the google_sign_in package. Here `googleSignIn` is the function's name, which could be your choice, whereas `GoogleSignIn` is the name of the function provided by the package.
+
+Firstly, a google account object is initiated, which fetches the account of the user stored on the phone and opens the dialog box when its method `.authentication` is called. If google servers receive the correct google account credentials, they return an `accessToken` and `idToken`, using which you can ask for the user's data stored on Google, like his `name` and `imageUrl` of his Google account profile picture, as done above in try block.
+
+Finally, Firebase needs to be informed that a successful google authentication has been done, and it has to be instructed to store the google user on its console, so `signInWithCredential` is called, and the Google sign-in credentials are retrieved using the `.credential` method of `googleAuthProvider`.
+
+## Log-out
+
+Google log out could be implemented the following way, this logs out the google account and you out of firebase.
+
+[https://lh5.googleusercontent.com/6PD5lRaOJ40xTXzhS67sKTZ7h-WKEkNQZ9fkwl4bqawJf9EzTpDh64TGTi37_9Q8HwMdSW306HOs49BnDiqzM28qF3zkXcbXlaYL0HisqI8VRzPVbi0ePyUcIDFCiB_ia5tLDSSRIAn3INqmv2I_ZdF9XZGQaypoVVPD-D_vm4dTTt2MuHLHIDM2_vRCXA](https://lh5.googleusercontent.com/6PD5lRaOJ40xTXzhS67sKTZ7h-WKEkNQZ9fkwl4bqawJf9EzTpDh64TGTi37_9Q8HwMdSW306HOs49BnDiqzM28qF3zkXcbXlaYL0HisqI8VRzPVbi0ePyUcIDFCiB_ia5tLDSSRIAn3INqmv2I_ZdF9XZGQaypoVVPD-D_vm4dTTt2MuHLHIDM2_vRCXA)
+
+## Maintaining Login State
+
+Have you ever wondered how various apps show Homescreen every time you open the app once logged in and show a login screen after logging out?
+
+[https://lh4.googleusercontent.com/L5pACycdL1XlobYqJtcJjYfEJtNz-Eq8oYr3YRWS6r9_J2DlTyTi_NXbA1Pil80V8titYBaOkGfCV8vNW48MIplLcPfEsS1-UJ0-TiljgvnW7nyynGg1SkZ5pRSceDAk6PZ4O0a3yruk7sr44q-CFo84wLYhCPHKARv-pRbY70BEwBEDH8OVm3jJ_wnEFw](https://lh4.googleusercontent.com/L5pACycdL1XlobYqJtcJjYfEJtNz-Eq8oYr3YRWS6r9_J2DlTyTi_NXbA1Pil80V8titYBaOkGfCV8vNW48MIplLcPfEsS1-UJ0-TiljgvnW7nyynGg1SkZ5pRSceDAk6PZ4O0a3yruk7sr44q-CFo84wLYhCPHKARv-pRbY70BEwBEDH8OVm3jJ_wnEFw)
+
+FirebaseAuth provides us with a miraculous method that keeps sending a stream of information which our `StreamBuilder` widget catches. Whenever the user is logged out, the `snapshot` returned by the stream at that particular instant afterwards becomes null, so `hasData` returns false. Hence, `AuthScreen` is rendered. Otherwise, if the user is logged in, then `snapshot.hasData` is true; therefore, `HomeScreen` is rendered.
+
+The best part is that `authStateChanges` only changes at logout or login, so closing the app does not affect it; hence, the app maintains its login state.
+
+**Note**:  If you don't know already about the `StreamBuilder` widget, you can check these videos 
+
+[https://youtu.be/nQBpOIHE4eE](https://youtu.be/nQBpOIHE4eE)
+
+[https://youtu.be/MkKEWHfy99Y](https://youtu.be/MkKEWHfy99Y)
+
+Happy Fluttering!🐧
+
+## Understanding error messages
+
+You can get different kinds of errors when building a Flutter app. We'll go through some of them here.
+
+One of the most common and relatively easy-to-fix errors is the **Syntax Error**, which generally gets recognized by the IDE and provides suggestions to solve the error. For example, forgetting a semicolon, not providing sufficient arguments to a function, passing a function with the wrong return type, etc. 
+
+Other types of errors are those which aren't recognized by the IDE but pop up when the app runs, i.e., **Runtime Errors**. For example, exceeding the index range of a list or passing a null value to a non-nullable variable etc. 
+
+These errors can be seen in the run tab in the bottom left corner of Android studio. 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cbf8ce1-b8d4-41db-bc00-0b24281520ea/Untitled.png)
+
+The important thing to know is that, for Flutter errors, the most helpful messages will be at the top of the error message. For example, in the above image, The error thrown is a **RangeError**, which means we tried to access something that is not in the list's range.
+
+With time (and google), you get more and more experience with the errors and then it's pretty clear what the error means (if not, use google).
+
+## Using the Debugger
+
+Debugging a logical error is difficult, as it doesn't show up on the IDE nor throw any error messages. An example of a logical error would be adding 2 instead of 1 in the default app in Flutter, it doesn't throw any error, but our app isn't functioning as expected. 
+
+The quick and dirty way to narrow down the issue would be to use `print` to track the counter variable changes. But for a complex problem, using print everywhere gets cumbersome.
+
+The other more powerful way to debug is the inbuilt debugger. For that, quit the running app by pressing the stop button and start the app in debugging mode using the bug icon.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1ef1af11-e238-4863-8cd7-758a9275ec99/Untitled.png)
+
+Few of the things you can do while in debug mode is adding breakpoints. You can add breakpoints by clicking on the side of the line numbers.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e60e9276-4af8-40c6-8079-365fc4c5f424/Untitled.png)
+
+A breakpoint will halt the code execution whenever it reaches this code line. You can then even look into the values of variables and properties and find out if everything has the value you expected.
+
+You can learn more about debugging in Android Studio here:
+
+[Debugging in Android Studio](https://medium.com/androiddevelopers/debugging-in-android-studio-dfbbf8a8d03c)
+
+## Dart DevTools
+
+DevTools is a suite of performance and debugging tools for Dart and Flutter.
+
+[https://www.youtube.com/watch?v=nq43mP7hjAE](https://www.youtube.com/watch?v=nq43mP7hjAE)
+
+More info about Dart DevTools can be found in the flutter docs
+
+- [Flutter Inspector](https://docs.flutter.dev/development/tools/devtools/inspector)
+- [Performance View](https://docs.flutter.dev/development/tools/devtools/performance)
+- [Network](https://docs.flutter.dev/development/tools/devtools/network)
+- [Debugger](https://docs.flutter.dev/development/tools/devtools/debugger)
+- [Logging](https://docs.flutter.dev/development/tools/devtools/logging)
