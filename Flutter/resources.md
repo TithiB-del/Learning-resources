@@ -96,9 +96,7 @@ Note the steps which have been skipped below. You don't need to complete these s
 
 6. 
 To build any application, we start with widgets – The building block of flutter applications. Widgets describe what their view should look like, given their current configuration and state. Remember, the first impression is the last. You'll always work with widgets if you're planning to start your app development journey with flutter. 
-
 [https://www.youtube.com/watch?v=bKueYVtV0eA](https://www.youtube.com/watch?v=bKueYVtV0eA)
-
  **Material App**
 A Material app starts with the [MaterialApp](https://api.flutter.dev/flutter/material/MaterialApp-class.html) widget, which builds a number of useful widgets at the root of your app.
 watch the below video from 7min 45sec time:
@@ -118,41 +116,23 @@ The state of an app can very simply be defined as anything that exists in the me
 [https://www.youtube.com/watch?v=1Iiq4oPCz3k&list=PLlvRDpXh1Se5LTJZDrUF9h1_1AT4Raxjd&index=4](https://www.youtube.com/watch?v=1Iiq4oPCz3k&list=PLlvRDpXh1Se5LTJZDrUF9h1_1AT4Raxjd&index=4)
 ## **TextField**
 https://youtu.be/YGTCP5AsaGM
-
 ## **Images and Assets**
-
 [https://www.youtube.com/watch?v=Hxh6nNHSUjo&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=8](https://www.youtube.com/watch?v=Hxh6nNHSUjo&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ&index=8)
-
 Official documentation for adding Images and Assets:
-
 [Adding assets and images](https://docs.flutter.dev/development/ui/assets-and-images)
-
 ## **Buttons and Icons**
-
 [https://www.youtube.com/watch?v=wvhkomzr0dU](https://www.youtube.com/watch?v=wvhkomzr0dU)
-
 ## **SnackBar**
-
 [https://www.youtube.com/watch?v=VlqKaAz8c1A&t=57s](https://www.youtube.com/watch?v=VlqKaAz8c1A&t=57s)
-
-Official Documentation for displaying a snackbar:
-
+Official Documentation for displaying a snackbar: <br>
 [Display a snackbar](https://docs.flutter.dev/cookbook/design/snackbars)
-
 Note - `Scaffold.of(context)`might not work at times, use `ScaffoldMessenger.of(context)` instead.
-
 ## **Builder**
-
 It is okay if you don't get Builder at the first glance. Just remember that whenever you need to pass context to a widget's function, you can wrap that widget with a Builder.
-
 [https://www.youtube.com/watch?v=xXNOkIuSYuA](https://www.youtube.com/watch?v=xXNOkIuSYuA)
-
 ## **ListTile and ListView**
-
 ListTile documentation - [ListTile class - material library - Dart API](https://api.flutter.dev/flutter/material/ListTile-class.html)
-
 [https://www.youtube.com/watch?v=l8dj0yPBvgQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=55](https://www.youtube.com/watch?v=l8dj0yPBvgQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=55)
-
 In case you need to display multiple ListTiles or multiple other widgets, use an in-built widget called ListView. It can be both static and dynamic.
 
 Listview documentation - [ListView class - widgets library - Dart API](https://api.flutter.dev/flutter/widgets/ListView-class.html)
@@ -462,10 +442,8 @@ You can learn more about debugging in Android Studio here:
 
 DevTools is a suite of performance and debugging tools for Dart and Flutter.
 
-[https://www.youtube.com/watch?v=nq43mP7hjAE](https://www.youtube.com/watch?v=nq43mP7hjAE)
-
+[https://www.youtube.com/watch?v=nq43mP7hjAE](https://www.youtube.com/watch?v=nq43mP7hjAE
 More info about Dart DevTools can be found in the flutter docs
-
 - [Flutter Inspector](https://docs.flutter.dev/development/tools/devtools/inspector)
 - [Performance View](https://docs.flutter.dev/development/tools/devtools/performance)
 - [Network](https://docs.flutter.dev/development/tools/devtools/network)
