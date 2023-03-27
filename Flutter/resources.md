@@ -449,3 +449,241 @@ More info about Dart DevTools can be found in the flutter docs
 - [Network](https://docs.flutter.dev/development/tools/devtools/network)
 - [Debugger](https://docs.flutter.dev/development/tools/devtools/debugger)
 - [Logging](https://docs.flutter.dev/development/tools/devtools/logging)
+
+<br>
+## Databases
+
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a [database management system (DBMS)](https://www.oracle.com/database/what-is-database/#WhatIsDBMS). Together, the data and the DBMS, along with the associated applications, are referred to as a database system, often shortened to just a database.
+
+## **Types Of Databases**
+
+1. **SQL** (Structured Query Language)
+    
+    Examples include MySQL, Oracle Database, SQLite etc.
+    
+2. **NoSQL** (Not Only SQL)
+    
+    Examples include MongoDB, Firebase Realtime Database, CouchDB etc.
+    
+
+[https://lh5.googleusercontent.com/E2O8ktwuJ1SzQvmiPmAE5_PqYpuhhnR0SbzxxK8Bilf031mUJtLdMDkG2TRUHvBkiEGqZKM6FBl18wotccK9q41p4R6Hb58tLA_9yLPyCeuBAjdDjIZ4WLHqwoUovnwu9_jELo6e76xUy1iU263M4lW0Ao9UklA8aCV4O0XabxL20OLg3o8tHVMhKU3W9w](https://lh5.googleusercontent.com/E2O8ktwuJ1SzQvmiPmAE5_PqYpuhhnR0SbzxxK8Bilf031mUJtLdMDkG2TRUHvBkiEGqZKM6FBl18wotccK9q41p4R6Hb58tLA_9yLPyCeuBAjdDjIZ4WLHqwoUovnwu9_jELo6e76xUy1iU263M4lW0Ao9UklA8aCV4O0XabxL20OLg3o8tHVMhKU3W9w)
+
+To learn more about these kinds of databases, check the following resources→
+
+- [https://www.ibm.com/cloud/blog/sql-vs-nosql](https://www.ibm.com/cloud/blog/sql-vs-nosql)
+- [https://www.integrate.io/blog/the-sql-vs-nosql-difference/](https://www.integrate.io/blog/the-sql-vs-nosql-difference/)
+- [https://backendless.com/sql-vs-nosql-database-a-complete-comparison](https://backendless.com/sql-vs-nosql-database-a-complete-comparison)
+- [Which Is Better? SQL vs NoSQL](https://youtu.be/t0GlGbtMTio)
+
+[https://lh4.googleusercontent.com/MjWYDaMDUDztowZE6zvWK0EH3yu722V67NG3PYSbyRU6YX6FT2trZoYWwSKvxsnXUEILrX1hgK0hUEck565TDs59KC4nbLKgCnEKlUcKH5OoISQ6EESvqj_v3frHFJtxNNf9A_U29a0SfnSgtGm9cs1JhgKquoPtq8aVhqwdT_lPxX_xTw2ialoJuOpg-g](https://lh4.googleusercontent.com/MjWYDaMDUDztowZE6zvWK0EH3yu722V67NG3PYSbyRU6YX6FT2trZoYWwSKvxsnXUEILrX1hgK0hUEck565TDs59KC4nbLKgCnEKlUcKH5OoISQ6EESvqj_v3frHFJtxNNf9A_U29a0SfnSgtGm9cs1JhgKquoPtq8aVhqwdT_lPxX_xTw2ialoJuOpg-g)
+
+**Note:** These are only additional resources for reference only. You don't need to learn all of this. We will use our sweet old Firebase database (a NoSQL database) for our App Development journey. 
+
+Though you can use any database solution for your Flutter app, Firebase, backed by Google, provides the most simple and easy integration with your flutter projects.
+
+## Firebase Database
+
+[https://www.youtube.com/watch?v=IemOAESlWKw&ab_channel=GoogleCloudTech](https://www.youtube.com/watch?v=IemOAESlWKw&ab_channel=GoogleCloudTech)
+
+### **Cloud Firestore**
+
+[https://youtu.be/QcsAb2RR52c?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL](https://youtu.be/QcsAb2RR52c?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL)
+
+- [https://firebase.google.com/docs/firestore](https://firebase.google.com/docs/firestore)
+- [https://firebase.google.com/products/firestore](https://firebase.google.com/products/firestore)
+
+### **Realtime Database**
+
+[https://www.youtube.com/watch?v=U5aeM5dvUpA](https://www.youtube.com/watch?v=U5aeM5dvUpA)
+
+These two services offered by google are not much different. To know more about them →
+
+- [https://firebase.google.com/docs/database/rtdb-vs-firestore](https://firebase.google.com/docs/database/rtdb-vs-firestore)
+- [https://www.javatpoint.com/firebase-firestore-vs-realtime-database](https://www.javatpoint.com/firebase-firestore-vs-realtime-database)
+
+We will be using cloud Firestore in our course as it is much more organized and scalable, and it is real-time as well (Just some weird ways to name things by Google).
+
+## Collections and Documents
+
+Firestore, just like any other NoSQL database, stores data in collections and documents which could be nested within each other to deal with more complex data. To understand documents and collections go through the following resources→
+
+[An example of a Firestore Collection](https://lh3.googleusercontent.com/mLx6frSOx_u58rWzcHfEDkRfTTDlzO9HLZ1TPpGUiCEmoHZYZelrAxsCpICDwljXonipj4VSIlFzvl4sgPT4sYMpfueFtXGO3WWj-ZlhaDf-nAH6LRUU3GZTHIbpQgCo779ds0axtA814BuaVD3_-KL3yrtsvWjH_dzS7mGwYJZO1odB0Uy7K6gNcxHiqA)
+
+An example of a Firestore Collection
+
+- What is a NoSQL Database? How is Cloud Firestore structured?
+
+[https://www.youtube.com/watch?v=v_hR4K4auoQ](https://www.youtube.com/watch?v=v_hR4K4auoQ)
+
+- Cloud Firestore Data model
+
+[Cloud Firestore Data model | Firebase](https://firebase.google.com/docs/firestore/data-model#dart)
+
+- Supported data types
+
+[Supported data types | Firestore | Firebase](https://firebase.google.com/docs/firestore/manage-data/data-types)
+
+It is really important you know what collections and documents are, so go through the above resources thoroughly. Though ignore the code snippet in these resources, as we will deal with these in our flutter app. Once you get familiar with collections and documents, we can start to code.
+
+[https://lh3.googleusercontent.com/uUt2A0MdQISGUB-su86KVZMbbrPEL6s83xlzyp1GPDKxMeO4rjjTCqhveGDYDhZJ474ITqPNY98QzbHS_eGTuTkXcNlappfcouIAlUCLZp3eBZEiCeBsjiiR418u6W7l7sZcFJlVU4NYxID6EMSarn3Zst1YZdPq6Z0l8WKMAzKcBKDjwt4Kc_nsE5OrTg](https://lh3.googleusercontent.com/uUt2A0MdQISGUB-su86KVZMbbrPEL6s83xlzyp1GPDKxMeO4rjjTCqhveGDYDhZJ474ITqPNY98QzbHS_eGTuTkXcNlappfcouIAlUCLZp3eBZEiCeBsjiiR418u6W7l7sZcFJlVU4NYxID6EMSarn3Zst1YZdPq6Z0l8WKMAzKcBKDjwt4Kc_nsE5OrTg)
+
+## **What is Firestore?**
+
+Google Firestore or Cloud Firestore is a part of the Google Firebase app development platform. It is a **cloud-hosted NoSQL database option** for storing and synchronizing data. Users can directly access Firestore from their web and mobile applications with native SDKs.
+
+Users can use it with programming languages such as Java, Unity, Node.js, Go, and C++ SDKs, and there is also support for RPC and REST APIs. The Firestore database facilitates better performance, automatic scaling, peak reliability, and considerable ease of use.
+
+Firestore enables the syncing of data across various client applications through real-time listeners. It uses Access Management and Cloud Identity features from Google for authentication purposes. Firestore enables the storage of ****data as documents, which are stored within collections.
+
+Firestore documents support various data types like numbers, nested objects, and strings. It can be integrated with Google Firebase and the Google Cloud Platform. Developers prefer Firestore due to the reliability and security it offers.
+
+Cloud Firestore supports indexed queries, facilitating the filtering and sorting functions with the single queries option. ACID transaction advantages are also available across collections and documents. Cloud Firestore being serverless, is convenient for developers and reduces the need to set up servers and manage access to data.
+
+[https://lh5.googleusercontent.com/u_Z_nSCfq51LEHVrzGogr4m4u1oNTRwDmxaUVBfiICxdU9JaJk6pTG0Rwq2aGKNfbcXZHHNN_SmyYSh77G0bKsBVlgYpyZ9ZYaCurvhqF-LbSgqwFOLavHLrhJpSZAE8c0VIokMr10Z1zx5bzj40Tt4YaUohT3NgYTJPqq-ZKZxPFjKJlyfJOrCtgrvd8A](https://lh5.googleusercontent.com/u_Z_nSCfq51LEHVrzGogr4m4u1oNTRwDmxaUVBfiICxdU9JaJk6pTG0Rwq2aGKNfbcXZHHNN_SmyYSh77G0bKsBVlgYpyZ9ZYaCurvhqF-LbSgqwFOLavHLrhJpSZAE8c0VIokMr10Z1zx5bzj40Tt4YaUohT3NgYTJPqq-ZKZxPFjKJlyfJOrCtgrvd8A)
+
+## **Firestore Capabilities**
+
+**Real-Time Updates –** Cloud Firestore utilizes synchronization for updating data across connected devices. This capability also enables users to implement one-time fetch queries efficiently.
+
+**Offline Synchronization –** Cloud Firestore performs caching of data being used by an app to let it read, write, query, and listen to data even with an offline device.
+
+**Data Structure –** Cloud Firestore's data model supports hierarchical data structures. Users can store their data as documents that are stored in collections. Documents contain complex nested objects and subcollections.
+
+**Expressive Querying –** Cloud Firestore enables the use of queries for fetching specific individual documents or retrieving documents matching query parameters from a collection. Queries include multiple chained filters and support sorting and filtering.
+
+**Scalability –** Cloud Firestore offers the scalability you expect from the Google Cloud Platform. Some of its capabilities include multi-regional replication, atomic batch operations, assurance of consistency, and support for real transactions.
+
+Before starting to work with the database in your flutter app, make sure firebase is correctly added to your flutter app. Follow [Add Firebase to your Flutter App](https://www.notion.so/Firebase-Overview-fe87e1cb75ad4cfc89aefdabe0c80fea)
+
+## Basic Read/Write Operations with Firestore
+
+[Get started with Cloud Firestore | Firebase](https://firebase.google.com/docs/firestore/quickstart)
+
+Make sure to initiate your database in test mode to avoid unexpected errors. You can try to add and read data from the above but avoid securing your data as it is not important for the time being since it is for production-ready code.
+
+## CRUD Operations with Firestore
+
+[https://lh3.googleusercontent.com/XbKyzqf-NEY2auM7x0gXi93Y6O9GXGAXkSn8V-n_msFT6qc0Rj8_WMj_eHNMCzMRtKNM4bL2Rid6WW13AwEcOZ5PkV2AlkF_B9fXqpdFmVGvLX41wfmvfrdDjx_DcqVxGEhhUg4nj0uBxk5_sbWizihBY9VtlLXTf7ofCuomkce2XSzF_Kk0kW6sFqoEVQ](https://lh3.googleusercontent.com/XbKyzqf-NEY2auM7x0gXi93Y6O9GXGAXkSn8V-n_msFT6qc0Rj8_WMj_eHNMCzMRtKNM4bL2Rid6WW13AwEcOZ5PkV2AlkF_B9fXqpdFmVGvLX41wfmvfrdDjx_DcqVxGEhhUg4nj0uBxk5_sbWizihBY9VtlLXTf7ofCuomkce2XSzF_Kk0kW6sFqoEVQ)
+
+The cloud Firestore offers certain methods to perform CRUD operations on your database.
+
+You have already dealt with Create and Read data in the above setup. Now →
+
+[https://www.youtube.com/watch?v=ErP_xomHKTw&t=157s](https://www.youtube.com/watch?v=ErP_xomHKTw&t=157s)
+
+Watch from 2:35 as you have set up firebase already with flutterfire CLI
+
+The below code snippets define basic crud operations with Cloud Firestore SDK in Flutter.
+
+[https://lh3.googleusercontent.com/SQoQGhqg2xcvZ2Q3vUPZ-cGVwNQqDQr6ntUnYBgwuLdZeuNEyVAPXjKP3cSWo6zGSopOb0QRwojwH-byp7rZiQKRo2L4HhIT6RoSGKtCFOHKJkvgd4X8o0WIXo6ekyGdQXCrpX1PM9f7tnHHhC_MUQ0pyem8Oz1PGad_2H7LXhrtIBTNrZPgmB5Yc4FVRA](https://lh3.googleusercontent.com/SQoQGhqg2xcvZ2Q3vUPZ-cGVwNQqDQr6ntUnYBgwuLdZeuNEyVAPXjKP3cSWo6zGSopOb0QRwojwH-byp7rZiQKRo2L4HhIT6RoSGKtCFOHKJkvgd4X8o0WIXo6ekyGdQXCrpX1PM9f7tnHHhC_MUQ0pyem8Oz1PGad_2H7LXhrtIBTNrZPgmB5Yc4FVRA)
+
+The best part about NoSQL databases is you don’t have to worry whether collection-named tasks exist in your database or not, if it is not it will be created after the first request automagically.
+
+To know more about how we can update data →
+
+[how to update field on document on cloud firestore using Flutter?](https://stackoverflow.com/questions/58383016/how-to-update-field-on-document-on-cloud-firestore-using-flutter)
+
+## Streams and Snapshot
+
+Ever Wondered how chat apps work? 
+
+Till now, we have learned that we can do CRUD operations in a database. So, in our chat app, we can get a list of all previous chats when we open the app, maybe by calling `setState()`.
+
+But what if someone sends a message while we are using the app? 
+
+When they send a message, they press the send button. So, we can call a write method when they press the button and now their message is on our database. 
+
+But how will we see their message on our device? 
+
+Maybe by creating a button to fetch an updated list of messages again. But that sounds terrible, doesn't it? We won't be using WhatsApp as much as we do now if we have to press a button every time to get others’ messages.
+
+This is where the extraordinary concepts of streams and snapshots step in. Cloud Firestore provides streams of data, which are continuously updated and sent to you, just like a live YouTube video stream where you get some snapshots of the YouTubers’ videos in real-time.
+
+[https://www.youtube.com/watch?v=3aoxOtMM2rc](https://www.youtube.com/watch?v=3aoxOtMM2rc)
+
+[Get realtime updates with Cloud Firestore | Firebase](https://firebase.google.com/docs/firestore/query-data/listen)
+
+[https://lh4.googleusercontent.com/MsFl2DjpMS625PG_l4tpVxx-bS49tqBEuwPz6GS_WKMao3Ufv1c5n9xTRnDoEfxHUrx5CqgoEdTn1drVuFzxLR6ezkPF6Ch73JPgOZKtndJjtEnMvCU9ipIeu5RqDzYFIubtdiEkHoYGqybU0Aj24wEEUPD-zHTEQJYwwhUGtYPvdE1ooOR4reDJZcJaew](https://lh4.googleusercontent.com/MsFl2DjpMS625PG_l4tpVxx-bS49tqBEuwPz6GS_WKMao3Ufv1c5n9xTRnDoEfxHUrx5CqgoEdTn1drVuFzxLR6ezkPF6Ch73JPgOZKtndJjtEnMvCU9ipIeu5RqDzYFIubtdiEkHoYGqybU0Aj24wEEUPD-zHTEQJYwwhUGtYPvdE1ooOR4reDJZcJaew)
+
+This is `streamBuilder`, which builds whatever is inside the `builder` whenever it receives a new `stream` or, rather more accurately, a new data chunk in the present `stream`
+
+[https://www.youtube.com/watch?v=qlxhqXnyUPw](https://www.youtube.com/watch?v=qlxhqXnyUPw)
+
+Make sure you understand `streambuilder` correctly, as that’s what you would be using in your week 4 assignment. If any doubts, ask your mentor, the above are just a few, there are dozens of resources to learn from.
+
+## Additional resources
+
+You have learnt basic HTTP requests, GET, POST etc. Can we store data on our Firestore database by just sending it as headers in an HTTP request to some REST API endpoint maybe?
+
+The answer is yes. We've been doing it the entire time. Cloud Firestore SDK provides us with functions/methods that do it. Underlying that package, every request to the database is a simple HTTP request.
+
+[Firebase Database REST API](https://firebase.google.com/docs/reference/rest/database)
+
+You can try this on your own if you wish, but that’s just optional as anyway the package simplifies it all.
+
+In many cases, during the development of an app, we are required to implement a particular feature. Many times, what we want is already available as a package contributed by other developers to the Flutter and dart ecosystem. 
+
+### What are packages?
+
+Packages are open-source code libraries which we can incorporate into our apps to make the process easier and less time-consuming.
+
+You can browse and search through the list of flutter and dart packages on [pub.dev](https://pub.dev/)
+
+Here is a **video demonstration** of using the Random ID generator package.
+
+[https://www.youtube.com/watch?v=vZOe1AcyP68](https://www.youtube.com/watch?v=vZOe1AcyP68)
+
+Refer to the [official documentation](https://docs.flutter.dev/development/packages-and-plugins/using-packages) to learn more on how to use packages in your project.
+
+### **Using custom fonts in your project**
+
+To use custom fonts in your project, you need to put the font file in a directory named `fonts` in the root of your project and then specify it in `pubspec.yaml`. After which, you are ready to use the fonts in your project.
+
+Here is a video demonstration of how to use custom fonts
+
+[https://www.youtube.com/watch?v=qI_7znKKlhA](https://www.youtube.com/watch?v=qI_7znKKlhA)
+
+You can also refer to the [official documentation](https://docs.flutter.dev/cookbook/design/fonts) to learn about it.
+
+***PS**- While working with the `pubspec.yaml` file, take care of the indentation to avoid errors*
+
+### Useful packages
+
+Here is a list of some Flutter Packages which we found very useful
+
+- [Shared_preferences](https://pub.dev/packages/shared_preferences)
+- [Google Fonts](https://pub.dev/packages/google_fonts)
+- [Animated-bottom-navigation-bar](https://pub.dev/packages/animated_bottom_navigation_bar)
+- [Bluetooth connect with flutter](https://pub.dev/packages/flutter_blue)
+- [biometric/password protection on your app](https://pub.dev/packages/local_auth)
+- [url_launcher](https://pub.dev/packages/url_launcher)
+
+Congratulations on finishing the Week 4 resources!
+
+As you continue your journey to mastering Flutter, there are many great resources available to help you develop and hone your skills.
+
+## Flutter.dev/learn
+
+We think the best resources for learning intermediate to advanced Flutter are the Flutter team's own resources to learn Flutter Development.
+
+[Learn](https://flutter.dev/learn)
+
+The website has 3 different journeys for learning Flutter at different stages: Beginner, Intermediate and Advanced.
+
+In this course, we have completely covered the Beginner part and a major portion of the Intermediate part. You can refer to the resources available here for whatever advanced topics you wish to learn.
+
+## Advanced Topics
+
+We have also compiled a list of advanced topics in Flutter you can choose to learn during your Flutter journey.
+
+- Animations in Flutter: Prepackaged and Custom
+- Responsive and Adaptive App Design
+- Advanced state management (provider/mobX/riverpods)
+- MVVC Model (clean code)
+- Custom Widgets: Composition and Inheritance
+- Flutter Themes
+- Advanced Firebase: Notifications, Storage, Analytics, etc.
+- Running Native iOS/Android code
+- Publishing to App Stores
+
+ Best of luck on your journey, and have fun with Flutter!
