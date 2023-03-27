@@ -1,3 +1,6 @@
+https://coding-club-iitg.notion.site/coding-club-iitg/First-Steps-to-Flutter-App-Development-Course-a7d66dbfd31045d9ad02cb9dc190350e
+<br>
+
 1.We're finally ready to start this exciting month-long journey of App Development with Flutter. We will start the first week at a relatively slow pace to ensure everyone is comfortable with the tools and platforms we will use. If you complete all the resources and are left with free time, please let us know about it on Discord, and we will add some optional resources for you.
 ## So, what is Flutter?
 Flutter is a software-development kit created by Google. It is used to develop cross-platform applications for platforms like Android, iOS and much more. Flutter is the ideal platform to start App Development because of its beginner-friendly design and easy-to-understand code.
